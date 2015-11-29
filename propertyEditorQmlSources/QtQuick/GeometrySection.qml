@@ -41,6 +41,7 @@
 import QtQuick 2.1
 import HelperWidgets 2.0
 import QtQuick.Layouts 1.0
+import "../Dialogs"
 
 Section {
     caption: "位置与大小"
@@ -86,6 +87,29 @@ Section {
                 minimumValue: -0xffff
                 decimals: 0
             }
+
+            Button {
+                Layout.minimumWidth: 24
+                Layout.maximumWidth: 24
+                Layout.minimumHeight: 24
+                Layout.maximumHeight: 24
+
+                onClicked: {
+                    dialogForMoveToXYFromCenter.targetX = backendValues.x.value - (backendValues.width.value / 2);
+                    dialogForMoveToXYFromCenter.targetY = backendValues.y.value - (backendValues.height.value / 2);
+                    dialogForMoveToXYFromCenter.show();
+                }
+
+                MoveToXYFromCenter {
+                    id: dialogForMoveToXYFromCenter
+
+                    onAccepted: {
+                        backendValues.x.value = targetX + (backendValues.width.value / 2);
+                        backendValues.y.value = targetY + (backendValues.height.value / 2);
+                    }
+                }
+            }
+
             ExpandingSpacer {
 
             }

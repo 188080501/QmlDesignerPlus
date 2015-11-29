@@ -65,7 +65,7 @@ Rectangle {
                     }
 
                     Label {
-                        text: qsTr("id")
+                        text: "id"
                     }
 
                     SecondColumnLayout {

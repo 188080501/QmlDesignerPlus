@@ -6,7 +6,7 @@ Window {
     id: dialogBase
     width: 300
     height: 300
-    title: "Dialog"
+    title: ""
     color: "#4f4f4f"
     modality: Qt.WindowModal
 }
