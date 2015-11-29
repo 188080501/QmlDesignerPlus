@@ -3,7 +3,7 @@ QmlDisigner二次开发计划
 介绍主页：
 http://qtdream.com/topic/70/发起qmldesigner二次开发工作/2
 
-使用方法：
+～～～～～～～～～～使用方法～～～～～～～～～～
 
 1.找到qmldesigner目录
 
@@ -17,3 +17,8 @@ http://qtdream.com/topic/70/发起qmldesigner二次开发工作/2
       
 
 2.使用GitHub中的qmldesigner目录替换本地的这个目录，然后就可以使用了～
+
+
+～～～～～～～～～～二次开发的新功能～～～～～～～～～～
+1.汉化属性编辑界面
+2.增加移动中心到XY的功能
