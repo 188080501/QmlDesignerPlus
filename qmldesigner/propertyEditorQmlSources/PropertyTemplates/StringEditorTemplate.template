@@ -3,7 +3,7 @@ LabelEx {
     tooltip: "%2"
     backendValue: backendValues.%2
 }
-LineEditEx {
+LineEdit {
     backendValue: backendValues.%2
     Layout.fillWidth: true
 }
