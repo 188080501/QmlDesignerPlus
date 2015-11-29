@@ -11,18 +11,18 @@ qt-creator-opensource-src-3.6.0-rc1
 
 ～～～～～～～～～～使用方法～～～～～～～～～～
 
-1.找到qmldesigner目录
+1.找到propertyEditorQmlSources目录
 
   在我的Windows系统下，目录是
   
-      C:\Qt\Qt5.5.1\Tools\QtCreator\share\qtcreator\qmldesigner
+      C:\Qt\Qt5.5.1\Tools\QtCreator\share\qtcreator\qmldesigner\propertyEditorQmlSources
       
   在我的OS X系统下，目录是：
   
-      /Applications/Qt5.5.1/Qt\ Creator.app/Contents/Resources/qmldesigner 
+      /Applications/Qt5.5.1/Qt\ Creator.app/Contents/Resources/qmldesigner/propertyEditorQmlSources
       
 
-2.使用GitHub中的qmldesigner目录替换本地的这个目录，然后就可以使用了～
+2.使用GitHub中的propertyEditorQmlSources目录替换本地的这个目录，然后就可以使用了～
 
 
 ～～～～～～～～～～二次开发的新功能～～～～～～～～～～
