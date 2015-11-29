@@ -62,6 +62,8 @@ Row {
 
     property bool baseStateFlag: isBaseState;
 
+    property bool defaultMidButton: false
+
     onValueChanged: {
         if (value !== undefined) {
             if (value === "AlignLeft") {
@@ -98,6 +100,14 @@ Row {
                 blueHighlight = true;
             else
                 blueHighlight = false;
+        }
+    }
+
+    Component.onCompleted: {
+        if(defaultMidButton)
+        {
+            buttonRow.initalChecked = 1
+            buttonRow.checkedIndex = 1
         }
     }
 

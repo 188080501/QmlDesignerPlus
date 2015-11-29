@@ -45,14 +45,14 @@ Rectangle {
             y: -1
             width: itemPane.width
             Section {
-                caption: qsTr("Type")
+                caption: "基础"
 
                 anchors.left: parent.left
                 anchors.right: parent.right
 
                 SectionLayout {
                     Label {
-                        text: qsTr("Type")
+                        text: "类型"
 
                     }
 
@@ -96,18 +96,18 @@ Rectangle {
                 anchors.left: parent.left
                 anchors.right: parent.right
 
-                caption: qsTr("Visibility")
+                caption: "能见度"
 
                 SectionLayout {
                     rows: 2
                     Label {
-                        text: qsTr("Visibility")
+                        text: "可见的"
                     }
 
                     SecondColumnLayout {
 
                         CheckBox {
-                            text: qsTr("Is Visible")
+                            text: "是否隐藏"
                             backendValue: backendValues.visible
                         }
 
@@ -118,7 +118,7 @@ Rectangle {
                         }
 
                         CheckBox {
-                            text: qsTr("Clip")
+                            text: "裁减"
                             backendValue: backendValues.clip
                         }
                         Item {
@@ -127,7 +127,7 @@ Rectangle {
                     }
 
                     Label {
-                        text: qsTr("Opacity")
+                        text: "透明度"
                     }
 
                     SecondColumnLayout {
@@ -209,7 +209,7 @@ Rectangle {
                 }
 
                 Tab {
-                    title: qsTr("Layout")
+                    title: "布局"
                     component: Column {
                         anchors.left: parent.left
                         anchors.right: parent.right
@@ -225,7 +225,7 @@ Rectangle {
 
                 Tab {
                     anchors.fill: parent
-                    title: qsTr("Advanced")
+                    title: "高级"
                     component: Column {
                         anchors.left: parent.left
                         anchors.right: parent.right

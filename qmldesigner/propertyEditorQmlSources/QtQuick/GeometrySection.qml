@@ -43,7 +43,7 @@ import HelperWidgets 2.0
 import QtQuick.Layouts 1.0
 
 Section {
-    caption: qsTr("Geometry")
+    caption: "位置与大小"
 
     anchors.left: parent.left
     anchors.right: parent.right
@@ -53,7 +53,7 @@ Section {
         rows: 2
 
         Label {
-            text: qsTr("Position")
+            text: "位置"
         }
 
         SecondColumnLayout {
@@ -91,14 +91,14 @@ Section {
             }
         }
         Label {
-            text: qsTr("Size")
+            text: "大小"
         }
 
         SecondColumnLayout {
             Layout.fillWidth: true
 
             Label {
-                text: "W"
+                text: "宽"
                 width: 12
             }
 
@@ -115,7 +115,7 @@ Section {
             }
 
             Label {
-                text: "H"
+                text: "高"
                 width: 12
             }
 

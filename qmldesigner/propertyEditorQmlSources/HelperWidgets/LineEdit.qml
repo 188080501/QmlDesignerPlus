@@ -116,7 +116,7 @@ Controls.TextField {
         textColor: lineEdit.textColor
         padding.top: 3
         padding.bottom: 1
-        padding.left: 16
+        padding.left: showExtendedFunctionButton ? 16 : 5
         padding.right: lineEdit.showTranslateCheckBox ? 16 : 1
         placeholderTextColor: "gray"
         background: Rectangle {

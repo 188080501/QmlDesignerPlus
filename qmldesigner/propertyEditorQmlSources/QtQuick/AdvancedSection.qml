@@ -41,7 +41,7 @@ Section {
         rows: 4
 
         Label {
-            text: qsTr("Origin")
+            text: "旋转起始点"
         }
 
         OriginControl {
@@ -49,7 +49,7 @@ Section {
         }
 
         Label {
-            text: qsTr("Scale")
+            text: "缩放"
         }
 
         SecondColumnLayout {
@@ -66,7 +66,7 @@ Section {
             }
         }
         Label {
-            text: qsTr("Rotation")
+            text: "旋转"
         }
         SecondColumnLayout {
             SpinBox {

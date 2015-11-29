@@ -33,21 +33,22 @@ import QtQuick.Controls 1.1 as Controls
 import QtQuick.Controls.Styles 1.1
 
 Controls.CheckBox {
-
     id: checkBox
+
+    opacity: enabled ? 1 : 0.5
 
     property color borderColor: "#222"
     property color highlightColor: "orange"
     property color textColor: colorLogic.textColor
 
-    opacity: enabled ? 1 : 0.5
+    property bool showExtendedFunctionButton: true
 
     property variant backendValue
 
     ExtendedFunctionButton {
         x: 22
         backendValue: checkBox.backendValue
-        visible: checkBox.enabled
+        visible: showExtendedFunctionButton && checkBox.enabled
     }
 
     ColorLogic {
@@ -66,6 +67,4 @@ Controls.CheckBox {
 
     style: CustomCheckBoxStyle {
     }
-
-
 }

@@ -1,8 +1,9 @@
-Label {
+LabelEx {
     text: "%1"
-    tooltip: "%1"
+    tooltip: "%2"
+    backendValue: backendValues.%2
 }
-LineEdit {
+LineEditEx {
     backendValue: backendValues.%2
     Layout.fillWidth: true
 }

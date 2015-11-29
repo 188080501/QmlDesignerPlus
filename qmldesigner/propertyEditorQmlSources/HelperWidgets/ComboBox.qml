@@ -91,7 +91,14 @@ Controls.ComboBox {
             return;
 
         if (!comboBox.useInteger) {
-            backendValue.setEnumeration(comboBox.scope, comboBox.currentText);
+            if(scope === "")
+            {
+                backendValue.value = comboBox.currentText;
+            }
+            else
+            {
+                backendValue.setEnumeration(comboBox.scope, comboBox.currentText);
+            }
         } else {
             backendValue.value = comboBox.currentIndex;
         }
