@@ -73,7 +73,7 @@ Rectangle {
                             id: lineEdit
 
                             backendValue: backendValues.id
-                            placeholderText: qsTr("id")
+                            placeholderText: "id"
                             text: backendValues.id.value
                             Layout.fillWidth: true
                             showTranslateCheckBox: false

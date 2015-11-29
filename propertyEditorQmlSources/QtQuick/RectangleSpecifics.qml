@@ -40,10 +40,10 @@ Column {
     Section {
         anchors.left: parent.left
         anchors.right: parent.right
-        caption: qsTr("Color")
+        caption: "颜色"
 
         ColorEditor {
-            caption: qsTr("Color")
+            caption: "颜色"
             backendValue: backendValues.color
             supportGradient: true
         }
@@ -54,10 +54,10 @@ Column {
     Section {
         anchors.left: parent.left
         anchors.right: parent.right
-        caption: qsTr("Border Color")
+        caption: "边框颜色"
 
         ColorEditor {
-            caption: qsTr("Border Color")
+            caption: "边框颜色"
             backendValue: backendValues.border_color
             supportGradient: false
         }
@@ -67,12 +67,12 @@ Column {
     Section {
         anchors.left: parent.left
         anchors.right: parent.right
-        caption: "Rectangle"
+        caption: "矩形"
 
         SectionLayout {
             rows: 2
             Label {
-                text: qsTr("Border")
+                text: "边框"
             }
             SecondColumnLayout {
                 SpinBox {
@@ -85,7 +85,7 @@ Column {
                 }
             }
             Label {
-                text: qsTr("Radius")
+                text: "圆角度数"
             }
             SecondColumnLayout {
                 SpinBox {

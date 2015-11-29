@@ -39,7 +39,7 @@ Column {
     Section {
         anchors.left: parent.left
         anchors.right: parent.right
-        caption: qsTr("Row")
+        caption: "行布局"
 
         SectionLayout {
             Label {
@@ -56,7 +56,7 @@ Column {
             }
 
             Label {
-                text: qsTr("Spacing")
+                text: "间距"
             }
 
             SecondColumnLayout {

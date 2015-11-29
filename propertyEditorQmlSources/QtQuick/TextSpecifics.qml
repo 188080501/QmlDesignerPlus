@@ -46,10 +46,10 @@ Column {
     Section {
         anchors.left: parent.left
         anchors.right: parent.right
-        caption: qsTr("Text Color")
+        caption: "文字颜色"
 
         ColorEditor {
-            caption: qsTr("Text Color")
+            caption: "文字颜色"
             backendValue: backendValues.color
             supportGradient: false
         }

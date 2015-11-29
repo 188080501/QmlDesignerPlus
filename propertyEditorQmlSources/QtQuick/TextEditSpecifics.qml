@@ -45,10 +45,10 @@ Column {
     Section {
         anchors.left: parent.left
         anchors.right: parent.right
-        caption: qsTr("Text Color")
+        caption: "文字颜色"
 
         ColorEditor {
-            caption: qsTr("Text Color")
+            caption: "文字颜色"
             backendValue: backendValues.color
             supportGradient: false
         }
@@ -58,10 +58,10 @@ Column {
     Section {
         anchors.left: parent.left
         anchors.right: parent.right
-        caption: qsTr("Selection Color")
+        caption: "文字颜色(选中)"
 
         ColorEditor {
-            caption: qsTr("Selection Color")
+            caption: "文字颜色(选中)"
             backendValue:  backendValues.selectionColor
             supportGradient: false
         }

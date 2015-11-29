@@ -46,7 +46,9 @@ Rectangle {
 
             Label {
                 id: test
-                text: qsTr("None or multiple items selected.");
+                text: "没有选择项目或者选择了多个\n此界面暂时失效"
+                verticalAlignment: Text.AlignVCenter
+                horizontalAlignment: Text.AlignHCenter
                 anchors.fill: parent
             }
         }

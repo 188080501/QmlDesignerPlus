@@ -45,14 +45,14 @@ Rectangle {
             y: -1
             width: itemPane.width
             Section {
-                caption: qsTr("Type")
+                caption: "基础"
 
                 anchors.left: parent.left
                 anchors.right: parent.right
 
                 SectionLayout {
                     Label {
-                        text: qsTr("Type")
+                        text: "类型"
 
                     }
 
@@ -65,7 +65,7 @@ Rectangle {
                     }
 
                     Label {
-                        text: qsTr("id")
+                        text: "id"
                     }
 
                     SecondColumnLayout {
@@ -73,7 +73,7 @@ Rectangle {
                             id: lineEdit
                             enabled: isBaseState
                             backendValue: backendValues.id
-                            placeholderText: qsTr("id")
+                            placeholderText: "id"
                             text: backendValues.id.value
                             Layout.fillWidth: true
                             showTranslateCheckBox: false

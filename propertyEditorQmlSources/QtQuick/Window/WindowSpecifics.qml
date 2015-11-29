@@ -43,7 +43,7 @@ Column {
 
         SectionLayout {
             Label {
-                text: qsTr("Title")
+                text: "标题"
             }
 
             SecondColumnLayout {
@@ -58,12 +58,12 @@ Column {
             }
 
             Label {
-                text: qsTr("Size")
+                text: "大小"
             }
 
             SecondColumnLayout {
                 Label {
-                    text: "W"
+                    text: "宽"
                     width: 12
                 }
 
@@ -75,7 +75,7 @@ Column {
                 }
 
                 Label {
-                    text: "H"
+                    text: "高"
                     width: 12
                 }
 
@@ -97,10 +97,10 @@ Column {
     Section {
         anchors.left: parent.left
         anchors.right: parent.right
-        caption: qsTr("Color")
+        caption: "背景色"
 
         ColorEditor {
-            caption: qsTr("Color")
+            caption: "背景色"
             backendValue: backendValues.color
             supportGradient: true
         }
@@ -115,7 +115,7 @@ Column {
         SectionLayout {
             rows: 2
             Label {
-                text: qsTr("Visible")
+                text: "是否隐藏"
             }
             SecondColumnLayout {
                 CheckBox {
@@ -127,7 +127,7 @@ Column {
                 }
             }
             Label {
-                text: qsTr("Opacity")
+                text: "透明度"
             }
             SecondColumnLayout {
                 SpinBox {
