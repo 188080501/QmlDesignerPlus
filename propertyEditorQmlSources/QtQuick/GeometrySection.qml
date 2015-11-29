@@ -89,10 +89,11 @@ Section {
             }
 
             Button {
-                Layout.minimumWidth: 24
-                Layout.maximumWidth: 24
+                Layout.minimumWidth: 40
+                Layout.maximumWidth: 40
                 Layout.minimumHeight: 24
                 Layout.maximumHeight: 24
+                text: "中心"
 
                 onClicked: {
                     dialogForMoveToXYFromCenter.targetX = backendValues.x.value - (backendValues.width.value / 2);

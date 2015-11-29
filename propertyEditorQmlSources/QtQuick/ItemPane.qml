@@ -118,7 +118,7 @@ Rectangle {
                         }
 
                         CheckBox {
-                            text: "裁减"
+                            text: "裁减子对象"
                             backendValue: backendValues.clip
                         }
                         Item {

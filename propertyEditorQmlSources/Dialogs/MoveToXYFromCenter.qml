@@ -22,7 +22,7 @@ DialogBase {
     SpinBox {
         id: spinBoxForTargetX
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.horizontalCenterOffset: 18
+        anchors.horizontalCenterOffset: 20
         anchors.verticalCenter: parent.verticalCenter
         anchors.verticalCenterOffset: -30
         minimumValue: -999999
@@ -39,7 +39,7 @@ DialogBase {
     SpinBox {
         id: spinBoxForTargetY
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.horizontalCenterOffset: 18
+        anchors.horizontalCenterOffset: 20
         anchors.verticalCenter: parent.verticalCenter
         anchors.verticalCenterOffset: 10
         minimumValue: -999999
