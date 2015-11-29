@@ -4,6 +4,7 @@ QmlDisigner二次开发计划
 http://qtdream.com/topic/70/发起qmldesigner二次开发工作/2
 
 使用方法：
+
 1.找到qmldesigner目录
   在我的Windows系统下，目录是
       C:\Qt\Qt5.5.1\Tools\QtCreator\share\qtcreator\qmldesigner
