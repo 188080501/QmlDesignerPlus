@@ -3,6 +3,9 @@ QmlDisigner二次开发计划
 介绍主页：
 http://qtdream.com/topic/70/发起qmldesigner二次开发工作/2
 
+目前已兼容的最高QtCreator版本：
+qt-creator-opensource-src-3.6.0-rc1
+
 
 ～～～～～～～～～～使用方法～～～～～～～～～～
 
