@@ -22,11 +22,11 @@ qt-creator-opensource-src-3.6.0-rc1
       /Applications/Qt5.5.1/Qt\ Creator.app/Contents/Resources/qmldesigner/propertyEditorQmlSources
       
 
-2.使用GitHub中的propertyEditorQmlSources目录替换本地的这个目录，然后就可以使用了～
+2.使用GitHub中的propertyEditorQmlSources目录替换本地的这个目录，然后就可以使用了。
 
 
 ～～～～～～～～～～二次开发的新功能～～～～～～～～～～
 
-1.汉化属性编辑界面
+1.汉化部分属性编辑界面
 
-2.增加移动中心到XY的功能
+2.在XY编辑界面，增加移动中心到XY的功能
