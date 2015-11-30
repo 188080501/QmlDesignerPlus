@@ -29,10 +29,10 @@
 ****************************************************************************/
 
 
-import QtQuick 2.1
-import QtQuick.Controls 1.0 as Controls
-import QtQuick.Window 2.0
-import QtQuick.Controls.Styles 1.1
+import QtQuick 2.5
+import QtQuick.Controls 1.4 as Controls
+import QtQuick.Window 2.2
+import QtQuick.Controls.Styles 1.4
 import "Constants.js" as Constants
 
 Item {

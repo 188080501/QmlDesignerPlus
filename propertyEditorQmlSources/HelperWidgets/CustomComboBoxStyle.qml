@@ -28,9 +28,9 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.1
-import QtQuick.Controls 1.1 as Controls
-import QtQuick.Controls.Styles 1.2
+import QtQuick 2.5
+import QtQuick.Controls 1.4 as Controls
+import QtQuick.Controls.Styles 1.4
 
 ComboBoxStyle {
     property color borderColor: "#222"

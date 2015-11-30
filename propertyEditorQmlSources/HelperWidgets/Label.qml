@@ -28,9 +28,9 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.1
-import QtQuick.Controls 1.1 as Controls
-import QtQuick.Layouts 1.0
+import QtQuick 2.4
+import QtQuick.Controls 1.4 as Controls
+import QtQuick.Layouts 1.1
 import QtQuick.Controls.Private 1.0
 
 Controls.Label {

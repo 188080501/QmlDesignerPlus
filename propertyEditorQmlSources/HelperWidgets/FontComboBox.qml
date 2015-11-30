@@ -38,10 +38,10 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.1
+import QtQuick 2.5
 import HelperWidgets 2.0
-import QtQuick.Layouts 1.0
-import QtQuick.Controls 1.0 as Controls
+import QtQuick.Layouts 1.1
+import QtQuick.Controls 1.4 as Controls
 
 Controls.ComboBox {
     id: comboBox
