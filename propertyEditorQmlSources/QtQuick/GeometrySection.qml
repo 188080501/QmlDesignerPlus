@@ -96,17 +96,18 @@ Section {
                 text: "中心"
 
                 onClicked: {
-                    dialogForMoveToXYFromCenter.targetX = backendValues.x.value - (backendValues.width.value / 2);
-                    dialogForMoveToXYFromCenter.targetY = backendValues.y.value - (backendValues.height.value / 2);
-                    dialogForMoveToXYFromCenter.show();
+                    advancedGeomtryEditor.open(backendValues.x.value, backendValues.y.value,
+                                               backendValues.width.value, backendValues.height.value);
                 }
 
-                MoveToXYFromCenter {
-                    id: dialogForMoveToXYFromCenter
+                AdvancedGeomtryEditor {
+                    id: advancedGeomtryEditor
 
                     onAccepted: {
-                        backendValues.x.value = targetX + (backendValues.width.value / 2);
-                        backendValues.y.value = targetY + (backendValues.height.value / 2);
+                        backendValues.x.value = advancedGeomtryEditor.currentX;
+                        backendValues.y.value = advancedGeomtryEditor.currentY;
+                        backendValues.width.value = advancedGeomtryEditor.currentWidth;
+                        backendValues.height.value = advancedGeomtryEditor.currentHeight;
                     }
                 }
             }
