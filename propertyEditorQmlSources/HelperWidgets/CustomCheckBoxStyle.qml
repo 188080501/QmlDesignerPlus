@@ -34,7 +34,7 @@ import QtQuick.Controls.Styles 1.4
 
 CheckBoxStyle {
     spacing: (control.showExtendedFunctionButton) ? (24) : (5)
-    label: Controls.Label { text: control.text ; color: checkBox.textColor }
+    label: Controls.Label { text: control.text ; color: control.textColor }
     indicator:  Item {
         implicitWidth: 16
         implicitHeight: 16
