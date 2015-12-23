@@ -13,7 +13,10 @@ QmlDesignerPlus分为两大块，一块为propertyEditorQmlSources二次开发�
 
 
 
+
 ～～～～～～～～～～propertyEditorQmlSources部分～～～～～～～～～～
+
+使用方法：
 
 1.找到propertyEditorQmlSources目录
 
@@ -38,13 +41,17 @@ QmlDesignerPlus分为两大块，一块为propertyEditorQmlSources二次开发�
 
 
 
+
 ～～～～～～～～～～qmleditorwidgets部分～～～～～～～～～～
+
+使用方法：
 
 1.下载Creator源码
 
 2.替换源码目录下的src/libs/qmleditorwidgets/目录
 
 3.编译
+
 
 
 二次开发的功能：
