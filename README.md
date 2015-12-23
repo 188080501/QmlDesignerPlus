@@ -57,6 +57,8 @@ QmlDesignerPlus分为两大块，一块为propertyEditorQmlSources二次开发�
 
 二次开发的功能：
 
-1.改进了Text的Helper
+1.改进了Text的HelperWidget
 
-2.改进了Rectangle的Helper
+2.改进了Rectangle的HelperWidget
+
+3.改进了Easing的HelperWidget
