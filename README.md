@@ -48,7 +48,8 @@ QmlDesignerPlus分为两大块，一块为propertyEditorQmlSources二次开发�
 
 1.下载Creator源码
 
-2.替换源码目录下的src/libs/qmleditorwidgets/目录
+2.合并本源码目录到src/libs/qmleditorwidgets/
+注意是合并！
 
 3.编译
 

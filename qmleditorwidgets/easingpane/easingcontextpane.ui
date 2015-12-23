@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>257</width>
-    <height>163</height>
+    <width>351</width>
+    <height>205</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -29,28 +29,18 @@
    <property name="spacing">
     <number>3</number>
    </property>
-   <item row="0" column="0" colspan="4">
-    <widget class="QGraphicsView" name="graphicsView">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="interactive">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </item>
    <item row="0" column="4">
     <widget class="QPushButton" name="playButton">
      <property name="minimumSize">
       <size>
-       <width>0</width>
-       <height>83</height>
+       <width>30</width>
+       <height>80</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
        <width>30</width>
-       <height>16777215</height>
+       <height>80</height>
       </size>
      </property>
      <property name="toolTip">
@@ -60,8 +50,11 @@
    </item>
    <item row="1" column="0">
     <widget class="QLabel" name="label_5">
+     <property name="toolTip">
+      <string>弹性弯曲</string>
+     </property>
      <property name="text">
-      <string>Easing</string>
+      <string notr="true">Easing</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -78,7 +71,7 @@
      </property>
      <property name="maximumSize">
       <size>
-       <width>70</width>
+       <width>90</width>
        <height>16777215</height>
       </size>
      </property>
@@ -88,6 +81,11 @@
      <item>
       <property name="text">
        <string notr="true">Linear</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string notr="true">Sine</string>
       </property>
      </item>
      <item>
@@ -108,11 +106,6 @@
      <item>
       <property name="text">
        <string notr="true">Quint</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string notr="true">Sine</string>
       </property>
      </item>
      <item>
@@ -144,11 +137,14 @@
    </item>
    <item row="1" column="2">
     <widget class="QLabel" name="label_6">
+     <property name="toolTip">
+      <string>子类型</string>
+     </property>
      <property name="layoutDirection">
       <enum>Qt::LeftToRight</enum>
      </property>
      <property name="text">
-      <string>Subtype</string>
+      <string notr="true">Subtype</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -162,6 +158,12 @@
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>90</width>
+       <height>16777215</height>
+      </size>
      </property>
      <property name="toolTip">
       <string>Acceleration or deceleration of easing curve.</string>
@@ -190,8 +192,11 @@
    </item>
    <item row="2" column="0">
     <widget class="QLabel" name="label_2">
+     <property name="toolTip">
+      <string>持续时间</string>
+     </property>
      <property name="text">
-      <string>Duration</string>
+      <string notr="true">Duration</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -202,7 +207,7 @@
     <widget class="QSpinBox" name="durationSpinBox">
      <property name="maximumSize">
       <size>
-       <width>70</width>
+       <width>90</width>
        <height>16777215</height>
       </size>
      </property>
@@ -216,7 +221,7 @@
       <bool>false</bool>
      </property>
      <property name="suffix">
-      <string> ms</string>
+      <string notr="true"> ms</string>
      </property>
      <property name="minimum">
       <number>-1</number>
@@ -225,7 +230,7 @@
       <number>9999999</number>
      </property>
      <property name="singleStep">
-      <number>10</number>
+      <number>100</number>
      </property>
      <property name="value">
       <number>250</number>
@@ -234,8 +239,11 @@
    </item>
    <item row="2" column="2">
     <widget class="QLabel" name="label">
+     <property name="toolTip">
+      <string>震幅</string>
+     </property>
      <property name="text">
-      <string>Amplitude</string>
+      <string notr="true">Amplitude</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -246,7 +254,7 @@
     <widget class="QDoubleSpinBox" name="amplitudeSpinBox">
      <property name="maximumSize">
       <size>
-       <width>70</width>
+       <width>90</width>
        <height>16777215</height>
       </size>
      </property>
@@ -275,8 +283,11 @@
    </item>
    <item row="3" column="0">
     <widget class="QLabel" name="label_3">
+     <property name="toolTip">
+      <string>周期</string>
+     </property>
      <property name="text">
-      <string>Period</string>
+      <string notr="true">Period</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -287,7 +298,7 @@
     <widget class="QDoubleSpinBox" name="periodSpinBox">
      <property name="maximumSize">
       <size>
-       <width>70</width>
+       <width>90</width>
        <height>16777215</height>
       </size>
      </property>
@@ -316,8 +327,11 @@
    </item>
    <item row="3" column="2">
     <widget class="QLabel" name="label_4">
+     <property name="toolTip">
+      <string>缓冲</string>
+     </property>
      <property name="text">
-      <string>Overshoot</string>
+      <string notr="true">Overshoot</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -328,7 +342,7 @@
     <widget class="QDoubleSpinBox" name="overshootSpinBox">
      <property name="maximumSize">
       <size>
-       <width>70</width>
+       <width>90</width>
        <height>16777215</height>
       </size>
      </property>
@@ -352,6 +366,16 @@
      </property>
      <property name="value">
       <double>1.700000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="4">
+    <widget class="QGraphicsView" name="graphicsView">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="interactive">
+      <bool>false</bool>
      </property>
     </widget>
    </item>
