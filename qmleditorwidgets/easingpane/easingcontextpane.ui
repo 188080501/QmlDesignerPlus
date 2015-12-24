@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>351</width>
-    <height>205</height>
+    <height>209</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -29,32 +29,182 @@
    <property name="spacing">
     <number>3</number>
    </property>
-   <item row="0" column="4">
-    <widget class="QPushButton" name="playButton">
-     <property name="minimumSize">
-      <size>
-       <width>30</width>
-       <height>80</height>
-      </size>
-     </property>
+   <item row="4" column="1">
+    <widget class="QComboBox" name="comboBoxForProperty">
      <property name="maximumSize">
       <size>
-       <width>30</width>
-       <height>80</height>
+       <width>90</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>x</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>y</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>z</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>width</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>height</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>opacity</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>scale</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>rotation</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>radius</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QDoubleSpinBox" name="periodSpinBox">
+     <property name="maximumSize">
+      <size>
+       <width>90</width>
+       <height>16777215</height>
       </size>
      </property>
      <property name="toolTip">
-      <string>Play simulation.</string>
+      <string>Easing period of an elastic curve.</string>
+     </property>
+     <property name="specialValueText">
+      <string>INVALID</string>
+     </property>
+     <property name="keyboardTracking">
+      <bool>false</bool>
+     </property>
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="maximum">
+      <double>999999.989999999990687</double>
+     </property>
+     <property name="singleStep">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.300000000000000</double>
      </property>
     </widget>
    </item>
-   <item row="1" column="0">
-    <widget class="QLabel" name="label_5">
+   <item row="2" column="1">
+    <widget class="QSpinBox" name="durationSpinBox">
+     <property name="maximumSize">
+      <size>
+       <width>90</width>
+       <height>16777215</height>
+      </size>
+     </property>
      <property name="toolTip">
-      <string>弹性弯曲</string>
+      <string>Duration of animation.</string>
+     </property>
+     <property name="specialValueText">
+      <string>INVALID</string>
+     </property>
+     <property name="keyboardTracking">
+      <bool>false</bool>
+     </property>
+     <property name="suffix">
+      <string notr="true"> ms</string>
+     </property>
+     <property name="minimum">
+      <number>-1</number>
+     </property>
+     <property name="maximum">
+      <number>9999999</number>
+     </property>
+     <property name="singleStep">
+      <number>100</number>
+     </property>
+     <property name="value">
+      <number>250</number>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="label">
+     <property name="toolTip">
+      <string>震幅</string>
      </property>
      <property name="text">
-      <string notr="true">Easing</string>
+      <string notr="true">Amplitude</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3" colspan="3">
+    <widget class="QDoubleSpinBox" name="amplitudeSpinBox">
+     <property name="maximumSize">
+      <size>
+       <width>90</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Amplitude of elastic and bounce easing curves.</string>
+     </property>
+     <property name="specialValueText">
+      <string>INVALID</string>
+     </property>
+     <property name="keyboardTracking">
+      <bool>false</bool>
+     </property>
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="maximum">
+      <double>999999.989999999990687</double>
+     </property>
+     <property name="singleStep">
+      <double>0.050000000000000</double>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QLabel" name="label_4">
+     <property name="toolTip">
+      <string>缓冲</string>
+     </property>
+     <property name="text">
+      <string notr="true">Overshoot</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -151,7 +301,88 @@
      </property>
     </widget>
    </item>
-   <item row="1" column="3" colspan="2">
+   <item row="0" column="5">
+    <widget class="QPushButton" name="playButton">
+     <property name="minimumSize">
+      <size>
+       <width>30</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Play simulation.</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="4">
+    <widget class="QGraphicsView" name="graphicsView">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="interactive">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="toolTip">
+      <string>周期</string>
+     </property>
+     <property name="text">
+      <string notr="true">Period</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="toolTip">
+      <string>弹性弯曲</string>
+     </property>
+     <property name="text">
+      <string notr="true">Easing</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="toolTip">
+      <string>持续时间</string>
+     </property>
+     <property name="text">
+      <string notr="true">Duration</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="toolTip">
+      <string>属性</string>
+     </property>
+     <property name="text">
+      <string>Property </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3" colspan="3">
     <widget class="QComboBox" name="easingExtremesComboBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
@@ -190,155 +421,7 @@
      </item>
     </widget>
    </item>
-   <item row="2" column="0">
-    <widget class="QLabel" name="label_2">
-     <property name="toolTip">
-      <string>持续时间</string>
-     </property>
-     <property name="text">
-      <string notr="true">Duration</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="1">
-    <widget class="QSpinBox" name="durationSpinBox">
-     <property name="maximumSize">
-      <size>
-       <width>90</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="toolTip">
-      <string>Duration of animation.</string>
-     </property>
-     <property name="specialValueText">
-      <string>INVALID</string>
-     </property>
-     <property name="keyboardTracking">
-      <bool>false</bool>
-     </property>
-     <property name="suffix">
-      <string notr="true"> ms</string>
-     </property>
-     <property name="minimum">
-      <number>-1</number>
-     </property>
-     <property name="maximum">
-      <number>9999999</number>
-     </property>
-     <property name="singleStep">
-      <number>100</number>
-     </property>
-     <property name="value">
-      <number>250</number>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="2">
-    <widget class="QLabel" name="label">
-     <property name="toolTip">
-      <string>震幅</string>
-     </property>
-     <property name="text">
-      <string notr="true">Amplitude</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="3" colspan="2">
-    <widget class="QDoubleSpinBox" name="amplitudeSpinBox">
-     <property name="maximumSize">
-      <size>
-       <width>90</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="toolTip">
-      <string>Amplitude of elastic and bounce easing curves.</string>
-     </property>
-     <property name="specialValueText">
-      <string>INVALID</string>
-     </property>
-     <property name="keyboardTracking">
-      <bool>false</bool>
-     </property>
-     <property name="decimals">
-      <number>3</number>
-     </property>
-     <property name="maximum">
-      <double>999999.989999999990687</double>
-     </property>
-     <property name="singleStep">
-      <double>0.050000000000000</double>
-     </property>
-     <property name="value">
-      <double>1.000000000000000</double>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="0">
-    <widget class="QLabel" name="label_3">
-     <property name="toolTip">
-      <string>周期</string>
-     </property>
-     <property name="text">
-      <string notr="true">Period</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="1">
-    <widget class="QDoubleSpinBox" name="periodSpinBox">
-     <property name="maximumSize">
-      <size>
-       <width>90</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="toolTip">
-      <string>Easing period of an elastic curve.</string>
-     </property>
-     <property name="specialValueText">
-      <string>INVALID</string>
-     </property>
-     <property name="keyboardTracking">
-      <bool>false</bool>
-     </property>
-     <property name="decimals">
-      <number>3</number>
-     </property>
-     <property name="maximum">
-      <double>999999.989999999990687</double>
-     </property>
-     <property name="singleStep">
-      <double>0.010000000000000</double>
-     </property>
-     <property name="value">
-      <double>0.300000000000000</double>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="2">
-    <widget class="QLabel" name="label_4">
-     <property name="toolTip">
-      <string>缓冲</string>
-     </property>
-     <property name="text">
-      <string notr="true">Overshoot</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="3" colspan="2">
+   <item row="3" column="3" colspan="3">
     <widget class="QDoubleSpinBox" name="overshootSpinBox">
      <property name="maximumSize">
       <size>
@@ -369,15 +452,21 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="0" colspan="4">
-    <widget class="QGraphicsView" name="graphicsView">
-     <property name="enabled">
-      <bool>true</bool>
+   <item row="0" column="4">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
      </property>
-     <property name="interactive">
-      <bool>false</bool>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
      </property>
-    </widget>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>5</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
    </item>
   </layout>
  </widget>
