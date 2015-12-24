@@ -35,6 +35,7 @@
 #include <qmljs/qmljspropertyreader.h>
 #include <qmljs/qmljsutils.h>
 #include <QDebug>
+#include <QTimer>
 
 namespace QmlEditorWidgets {
 
@@ -245,7 +246,7 @@ void ContextPaneWidgetRectangle::onBorderNoneClicked()
 {
     if (ui->borderNone->isChecked()) {
         emit removeProperty(QLatin1String("border.color"));
-        emit removeProperty(QLatin1String("border.width"));//###
+        QTimer::singleShot(200, [=]() { emit removeProperty(QLatin1String("border.width")); });
     }
 }
 

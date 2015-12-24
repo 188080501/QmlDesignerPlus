@@ -157,10 +157,10 @@
    <item row="2" column="2">
     <widget class="QLabel" name="label">
      <property name="toolTip">
-      <string>震幅</string>
+      <string>Amplitude</string>
      </property>
      <property name="text">
-      <string notr="true">Amplitude</string>
+      <string notr="true">震幅</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -201,10 +201,10 @@
    <item row="3" column="2">
     <widget class="QLabel" name="label_4">
      <property name="toolTip">
-      <string>缓冲</string>
+      <string>Overshoot</string>
      </property>
      <property name="text">
-      <string notr="true">Overshoot</string>
+      <string notr="true">缓冲</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -288,13 +288,13 @@
    <item row="1" column="2">
     <widget class="QLabel" name="label_6">
      <property name="toolTip">
-      <string>子类型</string>
+      <string>Subtype</string>
      </property>
      <property name="layoutDirection">
       <enum>Qt::LeftToRight</enum>
      </property>
      <property name="text">
-      <string notr="true">Subtype</string>
+      <string notr="true">子类型</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -333,10 +333,10 @@
    <item row="3" column="0">
     <widget class="QLabel" name="label_3">
      <property name="toolTip">
-      <string>周期</string>
+      <string>Period</string>
      </property>
      <property name="text">
-      <string notr="true">Period</string>
+      <string notr="true">周期</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -346,10 +346,10 @@
    <item row="1" column="0">
     <widget class="QLabel" name="label_5">
      <property name="toolTip">
-      <string>弹性弯曲</string>
+      <string>Easing</string>
      </property>
      <property name="text">
-      <string notr="true">Easing</string>
+      <string notr="true">弹性弯曲</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -359,10 +359,10 @@
    <item row="2" column="0">
     <widget class="QLabel" name="label_2">
      <property name="toolTip">
-      <string>持续时间</string>
+      <string>Duration</string>
      </property>
      <property name="text">
-      <string notr="true">Duration</string>
+      <string notr="true">持续时间</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -372,10 +372,10 @@
    <item row="4" column="0">
     <widget class="QLabel" name="label_7">
      <property name="toolTip">
-      <string>属性</string>
+      <string>Property </string>
      </property>
      <property name="text">
-      <string>Property </string>
+      <string>属性</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

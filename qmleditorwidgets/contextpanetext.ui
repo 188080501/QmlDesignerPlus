@@ -322,8 +322,11 @@
          <bold>true</bold>
         </font>
        </property>
-       <property name="text">
+       <property name="toolTip">
         <string>Font</string>
+       </property>
+       <property name="text">
+        <string>字体</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -607,8 +610,11 @@
          <bold>true</bold>
         </font>
        </property>
+       <property name="toolTip">
+        <string>Style</string>
+       </property>
        <property name="text">
-        <string notr="true">Style</string>
+        <string notr="true">样式</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -732,8 +738,11 @@
          <bold>true</bold>
         </font>
        </property>
-       <property name="text">
+       <property name="toolTip">
         <string>Wrap</string>
+       </property>
+       <property name="text">
+        <string>换行</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

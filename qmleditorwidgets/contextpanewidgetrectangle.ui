@@ -40,8 +40,11 @@
        <bold>true</bold>
       </font>
      </property>
-     <property name="text">
+     <property name="toolTip">
       <string>Color</string>
+     </property>
+     <property name="text">
+      <string>颜色</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -56,8 +59,11 @@
        <bold>true</bold>
       </font>
      </property>
-     <property name="text">
+     <property name="toolTip">
       <string>Border</string>
+     </property>
+     <property name="text">
+      <string>边框</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -88,8 +94,11 @@
        <bold>true</bold>
       </font>
      </property>
-     <property name="text">
+     <property name="toolTip">
       <string>Gradient</string>
+     </property>
+     <property name="text">
+      <string>渐变梯度</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
@@ -103,6 +112,9 @@
        <weight>75</weight>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="toolTip">
+      <string>Radius</string>
      </property>
      <property name="text">
       <string>弧度</string>
