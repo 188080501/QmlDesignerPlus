@@ -53,7 +53,7 @@
      <property name="minimumSize">
       <size>
        <width>240</width>
-       <height>200</height>
+       <height>216</height>
       </size>
      </property>
      <property name="title">
@@ -62,11 +62,14 @@
      <widget class="QCheckBox" name="checkBoxUseAnchors">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>70</y>
+        <x>65</x>
+        <y>20</y>
         <width>110</width>
-        <height>20</height>
+        <height>40</height>
        </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
       </property>
       <property name="text">
        <string>使用anchors</string>
@@ -75,14 +78,157 @@
      <widget class="QPushButton" name="pushButtonSyncSizeFromParent">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>140</y>
-        <width>120</width>
+        <x>70</x>
+        <y>117</y>
+        <width>100</width>
         <height>32</height>
        </rect>
       </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
       <property name="text">
        <string>设置</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBoxSyncSizeTopSpace">
+      <property name="geometry">
+       <rect>
+        <x>95</x>
+        <y>80</y>
+        <width>50</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="minimum">
+       <number>-999999</number>
+      </property>
+      <property name="maximum">
+       <number>999999</number>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBoxSyncSizeBottomSpace">
+      <property name="geometry">
+       <rect>
+        <x>95</x>
+        <y>180</y>
+        <width>50</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="minimum">
+       <number>-999999</number>
+      </property>
+      <property name="maximum">
+       <number>999999</number>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBoxSyncSizeLeftSpace">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>120</y>
+        <width>50</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="minimum">
+       <number>-999999</number>
+      </property>
+      <property name="maximum">
+       <number>999999</number>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBoxSyncSizeRightSpace">
+      <property name="geometry">
+       <rect>
+        <x>175</x>
+        <y>120</y>
+        <width>50</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="minimum">
+       <number>-999999</number>
+      </property>
+      <property name="maximum">
+       <number>999999</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>85</x>
+        <y>160</y>
+        <width>70</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>下方间距</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>85</x>
+        <y>60</y>
+        <width>70</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>上方间距</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>100</y>
+        <width>70</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>左方间距</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>100</y>
+        <width>70</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>右方间距</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </widget>

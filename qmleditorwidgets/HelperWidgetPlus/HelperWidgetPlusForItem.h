@@ -16,18 +16,24 @@ class QMLEDITORWIDGETS_EXPORT HelperWidgetPlusForItem : public QWidget
 {
     Q_OBJECT
 
+private:
+    Ui::HelperWidgetPlusForItem *ui;
+
+    QVector< QString > m_waitRemove;
+
 public:
     explicit HelperWidgetPlusForItem(QWidget *parent = 0);
+
     ~HelperWidgetPlusForItem();
+
     void setProperties(QmlJS::PropertyReader *propertyReader);
 
 signals:
     void propertyChanged(const QString &, const QVariant &);
-    void removeProperty(const QString &);
-    void removeAndChangeProperty(const QString &, const QString &, const QVariant &, bool removeFirst);
 
-private:
-    Ui::HelperWidgetPlusForItem *ui;
+    void removeProperty(const QString &);
+
+    void removeAndChangeProperty(const QString &, const QString &, const QVariant &, bool removeFirst);
 };
 
 } //QmlDesigner
