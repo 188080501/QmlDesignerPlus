@@ -1,6 +1,6 @@
 ## QmlDisigner二次开发计划
 
-# 介绍主页：
+### 介绍主页：
 
 http://qtdream.com/topic/70/发起qmldesigner二次开发工作/2
 
@@ -16,7 +16,7 @@ QmlDesignerPlus分为两大块，一块为propertyEditorQmlSources二次开发�
 
 ## propertyEditorQmlSources部分
 
-# 使用方法
+### 使用方法
 
 1.找到propertyEditorQmlSources目录
 
@@ -34,7 +34,7 @@ QmlDesignerPlus分为两大块，一块为propertyEditorQmlSources二次开发�
 注意是替换！
 
 
-# 开发的功能
+### 开发的功能
 
 1.汉化部分属性编辑界面
 
@@ -45,7 +45,7 @@ QmlDesignerPlus分为两大块，一块为propertyEditorQmlSources二次开发�
 
 ## qmleditorwidgets部分
 
-# 使用方法
+### 使用方法
 
 1.下载Creator源码并解压
 
@@ -56,7 +56,7 @@ QmlDesignerPlus分为两大块，一块为propertyEditorQmlSources二次开发�
 3.编译Creator源码
 
 
-# 二次开发的功能
+### 二次开发的功能
 
 1.新增Item的HelperWidget
 
